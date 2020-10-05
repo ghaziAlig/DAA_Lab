@@ -24,7 +24,7 @@ public class BinarySearch {
                     case 1: result = rescursivesearch(arr, 0, n - 1, x);
                         break;
 
-                    case 2: result = iterativesearch(arr,x);
+                    case 2: result = iterativesearch(arr,x, n);
                         break;
 
                     default: System.out.println("Enter 1 or 2 only!");
@@ -55,8 +55,8 @@ public class BinarySearch {
         return -1;
     }
 
-    static int iterativesearch(int[] arr, int x) {
-        int l = 0, r = arr.length - 1;
+    static int iterativesearch(int[] arr, int x, int n) {
+        int l = 0, r = n - 1;
         while (l <= r) {
             int m = l + (r - l) / 2;
 
