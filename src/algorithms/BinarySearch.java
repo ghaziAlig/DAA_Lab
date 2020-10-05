@@ -8,10 +8,12 @@ public class BinarySearch {
         int n=arr.length;
         Scanner sc =new Scanner(System.in);
         BinarySearchResult print = new BinarySearchResult();
+
         System.out.println("\nEnter the element that you want to search.");
         int x = sc.nextInt();
 
         int result = search(arr, 0, n - 1, x);
+
         print.print(arr, x, result);
     }
 
@@ -27,6 +29,6 @@ public class BinarySearch {
 
             return search(arr, mid + 1, r, x);
         }
-        return 1;
+        return -1;
     }
 }

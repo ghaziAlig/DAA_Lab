@@ -3,6 +3,7 @@ package algorithms;
 public class SelectionSort {
     public int[] sort(int[] arr) {
         int n = arr.length;
+
         for (int i = 0; i < n-1; i++) {
             int min_idx = i;
             for (int j = i+1; j < n; j++)

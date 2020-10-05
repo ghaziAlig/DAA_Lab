@@ -20,11 +20,11 @@ public class Main {
         while (true) {
             try {
                 System.out.println("\nSelect the operation to perform on the array!\n" +
-                        "1  ==>  Binary Search\n" +
-                        "2  ==>  InsertionSort\n" +
-                        "3  ==>  Merge Sort\n" +
-                        "4  ==>  Quick Sort\n" +
-                        "5  ==>  Selection Sort");
+                                    "1  ==>  Binary Search\n" +
+                                    "2  ==>  InsertionSort\n" +
+                                    "3  ==>  Merge Sort\n" +
+                                    "4  ==>  Quick Sort\n" +
+                                    "5  ==>  Selection Sort");
 
                 int ch = sc.nextInt();
                 switch (ch) {

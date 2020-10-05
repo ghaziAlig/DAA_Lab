@@ -2,16 +2,16 @@ package utilities;
 
 public class BinarySearchResult {
     public void print(int[] arr, int x, int result) {
-        if (result == 1)
-            System.out.println("Element not present in the given array.");
+        if (result == -1)
+            System.out.println("Element " + x + " not present in the given array.");
         else
-            System.out.println("Element found at index " + result);
+            System.out.println("Element " + x + " found at index " + result);
 
         for (int i=0; i<arr.length; i++) {
-            if (i!=x)
-                System.out.print(arr[i]+"\t");
+            if (arr[i] != x)
+                System.out.print(arr[i]+"   ");
             else
-                System.out.print("'" + arr[i] + "'" + "\t");
+                System.out.print("'" + arr[i] + "'" + "   ");
         }
 
     }
