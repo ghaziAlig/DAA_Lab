@@ -7,6 +7,7 @@ public class BinarySearchResult {
         else
             System.out.println("Element " + x + " found at index " + result);
 
+        System.out.println("\n#####SEARCH RESULT####");
         for (int i=0; i<arr.length; i++) {
             if (arr[i] != x)
                 System.out.print(arr[i]+"   ");
