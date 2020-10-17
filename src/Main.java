@@ -15,18 +15,18 @@ public class Main {
         QuickSort quickSort = new QuickSort();
         SelectionSort selectionSort = new SelectionSort();
 
-        int[] arr = arrayCreator.createArray();
+        int[] arr = arrayCreator.init();
 
         while (true) {
             try {
                 System.out.println("\n\nSelect the operation to perform on the array!\n" +
-                                        "1  ==>  Experiment-1 (Insertion Sort)\n" +
-                                        "2  ==>  Experiment-2 (Selection Sort)\n" +
-                                        "3  ==>  Experiment-3 (Quick Sort)\n" +
-                                        "4  ==>  Experiment-4 (Merge Sort)\n" +
-                                        "5  ==>  Experiment-5 (Binary Search)\n" +
-                                        "6  ==>  Experiment-6 (Greedy 0/1 Knapsack Problem)\n" +
-                                        "7  ==>  Experiment-7 (Greedy Job Sequencing Problem)");
+                        "1  ==>  Experiment-1 (Insertion Sort)\n" +
+                        "2  ==>  Experiment-2 (Selection Sort)\n" +
+                        "3  ==>  Experiment-3 (Quick Sort)\n" +
+                        "4  ==>  Experiment-4 (Merge Sort)\n" +
+                        "5  ==>  Experiment-5 (Binary Search)\n" +
+                        "6  ==>  Experiment-6 (Greedy 0/1 Knapsack Problem)\n" +
+                        "7  ==>  Experiment-7 (Greedy Job Sequencing Problem)");
 
                 int ch = sc.nextInt();
                 switch (ch) {
