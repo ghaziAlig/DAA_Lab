@@ -7,13 +7,14 @@ public class BinarySearchResult {
         else
             System.out.println("Element " + x + " found at index " + result);
 
-        System.out.println("\n#####SEARCH RESULT#####");
-        for (int i=0; i<arr.length; i++) {
-            if (arr[i] != x)
-                System.out.print(arr[i]+"   ");
+        System.out.println("\n########SEARCH RESULT########\n");
+        for (int j : arr) {
+            if (j != x)
+                System.out.print(j + "   ");
             else
-                System.out.print("'" + arr[i] + "'" + "   ");
+                System.out.print("'" + j + "'" + "   ");
         }
+        System.out.println("\n\n#############################");
         System.out.println();
 
     }
