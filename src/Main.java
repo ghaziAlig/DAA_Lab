@@ -19,34 +19,36 @@ public class Main {
 
         while (true) {
             try {
-                System.out.println("\nSelect the operation to perform on the array!\n" +
-                                    "1  ==>  Binary Search\n" +
-                                    "2  ==>  InsertionSort\n" +
-                                    "3  ==>  Merge Sort\n" +
-                                    "4  ==>  Quick Sort\n" +
-                                    "5  ==>  Selection Sort");
+                System.out.println("\n\nSelect the operation to perform on the array!\n" +
+                        "1  ==>  Experiment-1 (Insertion Sort)\n" +
+                        "2  ==>  Experiment-2 (Selection Sort)\n" +
+                        "3  ==>  Experiment-3 (Quick Sort)\n" +
+                        "4  ==>  Experiment-4 (Merge Sort)\n" +
+                        "5  ==>  Experiment-5 (Binary Search)\n" +
+                        "6  ==>  Experiment-6 (Greedy 0/1 Knapsack Problem)\n" +
+                        "7  ==>  Experiment-7 (Greedy Job Sequencing Problem)");
 
                 int ch = sc.nextInt();
                 switch (ch) {
-                    case 1: binarySearch.init(arr);
-                    break;
+                    case 1: arr = insertionSort.sort(arr);
+                        break;
 
-                    case 2: arr = insertionSort.sort(arr);
-                    break;
+                    case 2: arr = selectionSort.sort(arr);
+                        break;
 
-                    case 3: arr = mergeSort.init(arr);
-                    break;
+                    case 3: arr = quickSort.init(arr);
+                        break;
 
-                    case 4: arr = quickSort.init(arr);
-                    break;
+                    case 4: arr = mergeSort.init(arr);
+                        break;
 
-                    case 5: arr = selectionSort.sort(arr);
-                    break;
+                    case 5: binarySearch.init(arr);
+                        break;
 
                     default: System.out.println("Enter a number from 1 to 5 only!");
-                    continue;
+                        continue;
                 }
-                if (ch>1) {
+                if (ch!=5) {
                     printArray.printArray(arr);
                 }
                 break;
