@@ -6,7 +6,7 @@ public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        array arrayCreator = new array();
+        Array arrayCreator = new Array();
         PrintArray printArray = new PrintArray();
 
         BinarySearch binarySearch = new BinarySearch();

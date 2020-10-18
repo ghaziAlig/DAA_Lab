@@ -1,7 +1,7 @@
 package utilities;
 import java.util.*;
 
-public class array {
+public class Array {
     Scanner sc = new Scanner(System.in);
     public int[] init() {
         int[] arr;
@@ -14,10 +14,10 @@ public class array {
                 int ch = sc.nextInt();
 
                 switch (ch) {
-                    case 1: arr = Manual();
+                    case 1: arr = manual();
                         break;
 
-                    case 2: arr = Automatic();
+                    case 2: arr = automatic();
                         break;
 
                     default: System.out.println("Enter 1 or 2 only!");
@@ -34,7 +34,7 @@ public class array {
         return arr;
     }
 
-    public int[] Manual() {
+    public int[] manual() {
         System.out.println("\nEnter the number of elements in the array.");
         int arr_len = sc.nextInt();
 
@@ -61,7 +61,7 @@ public class array {
     }
 
 
-    public int[] Automatic() {
+    public int[] automatic() {
         Random random = new Random();
         int arr_len = random.nextInt(10-4)+4;
         int[] arr =new int[arr_len];
