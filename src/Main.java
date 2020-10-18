@@ -24,9 +24,9 @@ public class Main {
                         "2  ==>  Experiment-2 (Selection Sort)\n" +
                         "3  ==>  Experiment-3 (Quick Sort)\n" +
                         "4  ==>  Experiment-4 (Merge Sort)\n" +
-                        "5  ==>  Experiment-5 (Binary Search)\n" +
+                        "5  ==>  Experiment-5 (Binary Search)\n"/* +
                         "6  ==>  Experiment-6 (Greedy 0/1 Knapsack Problem)\n" +
-                        "7  ==>  Experiment-7 (Greedy Job Sequencing Problem)");
+                        "7  ==>  Experiment-7 (Greedy Job Sequencing Problem)"*/);
 
                 int ch = sc.nextInt();
                 switch (ch) {
@@ -57,6 +57,12 @@ public class Main {
                 System.out.println("\nWrong Input!!  Try again.");
                 sc.next();
             }
+        }
+
+        System.out.println("\n\nDo you want to do it again?\nEnter 'Y' if yes, any other character if no.");
+        char ch = sc.next().charAt(0);
+        if (ch == ('y'|'Y')) {
+            main(null);
         }
     }
 }
