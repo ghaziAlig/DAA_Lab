@@ -20,13 +20,17 @@ public class Main {
         while (true) {
             try {
                 System.out.println("\n\nSelect the operation to perform on the array!\n" +
-                        "1  ==>  Experiment-1 (Insertion Sort)\n" +
-                        "2  ==>  Experiment-2 (Selection Sort)\n" +
-                        "3  ==>  Experiment-3 (Quick Sort)\n" +
-                        "4  ==>  Experiment-4 (Merge Sort)\n" +
-                        "5  ==>  Experiment-5 (Binary Search)\n"/* +
-                        "6  ==>  Experiment-6 (Greedy 0/1 Knapsack Problem)\n" +
-                        "7  ==>  Experiment-7 (Greedy Job Sequencing Problem)"*/);
+                        "1   ==>  Experiment-1  (Insertion Sort)\n" +
+                        "2   ==>  Experiment-2  (Selection Sort)\n" +
+                        "3   ==>  Experiment-3  (Quick Sort)\n" +
+                        "4   ==>  Experiment-4  (Merge Sort)\n" +
+                        "5   ==>  Experiment-5  (Binary Search)\n"/* +
+                        "6   ==>  Experiment-6  (Greedy 0/1 Knapsack Problem)\n" +
+                        "7   ==>  Experiment-7  (Greedy Job Sequencing Problem)" +
+                        "8   ==>  Experiment-8  (0/1 Knapsack Problem using Dynamic Programming)" +
+                        "9   ==>  Experiment-9  (Shortest Paths using Dijkstra’s Algorithm)" +
+                        "10  ==>  Experiment-10 (Minimum Cost Spanning Tree using Kruskal's Algorithm)" +
+                        "11  ==>  Experiment-11 (Minimum Cost Spanning Tree using Prim's Algorithm)"*/);
 
                 int ch = sc.nextInt();
                 switch (ch) {
