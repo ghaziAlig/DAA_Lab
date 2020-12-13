@@ -25,28 +25,27 @@ public class Job {
 
         // Sort all jobs according to
         // decreasing order of profit
-        Collections.sort(arr,
-                (a, b) -> b.profit - a.profit);
+        arr.sort((a, b) -> b.profit - a.profit);
 
         // To keep track of free time slots
-        boolean result[] = new boolean[t];
+        boolean[] result = new boolean[t];
 
         // To store result (Sequence of jobs)
-        char job[] = new char[t];
+        char[] job = new char[t];
 
         // Iterate through all given jobs
-        for (int i = 0; i < n; i++) {
+        for (Job value : arr) {
             // Find a free slot for this job
             // (Note that we start from the
             // last possible slot)
             for (int j
-                 = Math.min(t - 1, arr.get(i).deadline - 1);
+                 = Math.min(t - 1, value.deadline - 1);
                  j >= 0; j--) {
 
                 // Free slot found
                 if (result[j] == false) {
                     result[j] = true;
-                    job[j] = arr.get(i).id;
+                    job[j] = value.id;
                     break;
                 }
             }
