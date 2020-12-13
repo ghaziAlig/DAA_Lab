@@ -38,25 +38,15 @@ public class KnapsackDynamic {
     }
 
     public void init() {
-        /*
-         * Pack and Weight - Value
-         */
-        //int W[] = new int[]{3, 4, 5, 9, 4};
-        int[] W = new int[]{12, 2, 1, 1, 4};
+ //      * Pack and Weight - Value
+        int[] W = new int[]{24, 6, 3, 3, 12};
 
-        //int V[] = new int[]{3, 4, 4, 10, 4};
-        int[] V = new int[]{4, 2, 1, 2, 10};
+        int[] V = new int[]{12, 6, 3, 6, 20};
 
-        /*
-         * Max Weight
-         */
-        //int M = 11;
-        int M = 15;
+        //      Max Weight
+        int M = 30;
         int n = V.length;
 
-        /*
-         * Run the algorithm
-         */
         knapsackDyProg(W, V, M, n);
     }
 }
