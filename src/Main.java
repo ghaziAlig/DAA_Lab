@@ -15,6 +15,7 @@ public class Main {
         MergeSort mergeSort = new MergeSort();
         BinarySearch binarySearch = new BinarySearch();
         Greedy01Knapsack greedy01Knapsack = new Greedy01Knapsack();
+        GreedyJobSequencing greedyJobSequencing = new GreedyJobSequencing();
 
         int[] arr = new int[0];
 
@@ -26,8 +27,8 @@ public class Main {
                         "3   ==>  Experiment-3  (Quick Sort)\n" +
                         "4   ==>  Experiment-4  (Merge Sort)\n" +
                         "5   ==>  Experiment-5  (Binary Search)\n" +
-                        "6   ==>  Experiment-6  (Greedy 0/1 Knapsack Problem)\n"/* +
-                        "7   ==>  Experiment-7  (Greedy Job Sequencing Problem)" +
+                        "6   ==>  Experiment-6  (Greedy 0/1 Knapsack Problem)\n" +
+                        "7   ==>  Experiment-7  (Greedy Job Sequencing Problem)"/* +
                         "8   ==>  Experiment-8  (0/1 Knapsack Problem using Dynamic Programming)" +
                         "9   ==>  Experiment-9  (Shortest Paths using Dijkstra’s Algorithm)" +
                         "10  ==>  Experiment-10 (Minimum Cost Spanning Tree using Kruskal's Algorithm)" +
@@ -55,6 +56,9 @@ public class Main {
                         break;
 
                     case 6: greedy01Knapsack.init();
+                        break;
+
+                    case 7: greedyJobSequencing.init();
                         break;
 
                     default: System.out.println("Enter a number from 1 to 5 only!");
