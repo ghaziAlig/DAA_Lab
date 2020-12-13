@@ -9,13 +9,14 @@ public class Main {
         Array arrayCreator = new Array();
         PrintArray printArray = new PrintArray();
 
-        BinarySearch binarySearch = new BinarySearch();
         InsertionSort insertionSort = new InsertionSort();
-        MergeSort mergeSort = new MergeSort();
-        QuickSort quickSort = new QuickSort();
         SelectionSort selectionSort = new SelectionSort();
+        QuickSort quickSort = new QuickSort();
+        MergeSort mergeSort = new MergeSort();
+        BinarySearch binarySearch = new BinarySearch();
+        Greedy01Knapsack greedy01Knapsack = new Greedy01Knapsack();
 
-        int[] arr = arrayCreator.init();
+        int[] arr = new int[0];
 
         while (true) {
             try {
@@ -24,8 +25,8 @@ public class Main {
                         "2   ==>  Experiment-2  (Selection Sort)\n" +
                         "3   ==>  Experiment-3  (Quick Sort)\n" +
                         "4   ==>  Experiment-4  (Merge Sort)\n" +
-                        "5   ==>  Experiment-5  (Binary Search)\n"/* +
-                        "6   ==>  Experiment-6  (Greedy 0/1 Knapsack Problem)\n" +
+                        "5   ==>  Experiment-5  (Binary Search)\n" +
+                        "6   ==>  Experiment-6  (Greedy 0/1 Knapsack Problem)\n"/* +
                         "7   ==>  Experiment-7  (Greedy Job Sequencing Problem)" +
                         "8   ==>  Experiment-8  (0/1 Knapsack Problem using Dynamic Programming)" +
                         "9   ==>  Experiment-9  (Shortest Paths using Dijkstra’s Algorithm)" +
@@ -33,6 +34,10 @@ public class Main {
                         "11  ==>  Experiment-11 (Minimum Cost Spanning Tree using Prim's Algorithm)"*/);
 
                 int ch = sc.nextInt();
+
+                if (ch <= 4)
+                    arr = arrayCreator.init();
+
                 switch (ch) {
                     case 1: arr = insertionSort.sort(arr);
                         break;
@@ -49,10 +54,13 @@ public class Main {
                     case 5: binarySearch.init(arr);
                         break;
 
+                    case 6: greedy01Knapsack.init();
+                        break;
+
                     default: System.out.println("Enter a number from 1 to 5 only!");
                         continue;
                 }
-                if (ch!=5) {
+                if (ch <= 5) {
                     printArray.printArray(arr);
                 }
                 break;
