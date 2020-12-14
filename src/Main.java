@@ -77,7 +77,7 @@ public class Main {
                     case 11: primMCST.init();
                     break;
 
-                    default: System.out.println("Enter a number from 1 to 5 only!");
+                    default: System.out.println("Enter a number from 1 to 11 only!");
                     continue;
                 }
                 if (ch <= 5) {
