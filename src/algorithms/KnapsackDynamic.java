@@ -38,7 +38,7 @@ public class KnapsackDynamic {
     }
 
     public void init() {
- //      * Pack and Weight - Value
+ //     Pack and Weight - Value
         int[] W = new int[]{24, 6, 3, 3, 12};
 
         int[] V = new int[]{12, 6, 3, 6, 20};
