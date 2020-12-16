@@ -20,6 +20,10 @@ public class Main {
         ShortestPaths shortestPaths = new ShortestPaths();
         KruskalMCST kruskalMCST = new KruskalMCST();
         PrimMCST primMCST = new PrimMCST();
+        FindSubset findSubset = new FindSubset();
+        AllPairShortestPaths allPairShortestPaths = new AllPairShortestPaths();
+        NQueen nQueen = new NQueen();
+        TravellingSalesman travellingSalesman = new TravellingSalesman();
 
         int[] arr = new int[0];
 
@@ -36,7 +40,11 @@ public class Main {
                         "8   ==>  Experiment-8  (0/1 Knapsack Problem using Dynamic Programming)\n" +
                         "9   ==>  Experiment-9  (Shortest Paths using Dijkstra’s Algorithm)\n" +
                         "10  ==>  Experiment-10 (Minimum Cost Spanning Tree using Kruskal's Algorithm)\n" +
-                        "11  ==>  Experiment-11 (Minimum Cost Spanning Tree using Prim's Algorithm)");
+                        "11  ==>  Experiment-11 (Minimum Cost Spanning Tree using Prim's Algorithm)\n" +
+                        "12  ==>  Experiment-12 (To  find a subset of a given set S = {s1, s2,....., sn}...)\n" +
+                        "13  ==>  Experiment-13 (All-Pairs Shortest Paths Problem using Floyd's algorithm)\n" +
+                        "14  ==>  Experiment-14 (N Queen's problem using Back Tracking)\n" +
+                        "15  ==>  Experiment-15 (Travelling salesperson problem (TSP) using dynamic programming.)");
 
                 int ch = sc.nextInt();
 
@@ -77,7 +85,19 @@ public class Main {
                     case 11: primMCST.init();
                     break;
 
-                    default: System.out.println("Enter a number from 1 to 11 only!");
+                    case 12: findSubset.init();
+                    break;
+
+                    case 13: allPairShortestPaths.init();
+                    break;
+
+                    case 14: nQueen.init();
+                    break;
+
+                    case 15: travellingSalesman.init();
+                    break;
+
+                    default: System.out.println("Enter a number from 1 to 15 only!");
                     continue;
                 }
                 if (ch <= 5) {

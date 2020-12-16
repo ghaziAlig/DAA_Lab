@@ -3,7 +3,6 @@ package algorithms;
 public class ShortestPaths {
     static final int V = 9;
     int minDistance(int[] dist, Boolean[] sptSet) {
-        // Initialize minimum value
         int min = Integer.MAX_VALUE, min_index = -1;
 
         for (int v = 0; v < V; v++)
@@ -35,10 +34,9 @@ public class ShortestPaths {
 
         // Find shortest path for all vertices
         for (int count = 0; count < V - 1; count++) {
-            // Pick the minimum distance vertex from the set of vertices not yet processed.
+
             int u = minDistance(dist, sptSet);
 
-            // Mark the picked vertex as processed
             sptSet[u] = true;
 
             for (int v = 0; v < V; v++)
@@ -46,13 +44,10 @@ public class ShortestPaths {
                     dist[v] = dist[u] + graph[u][v];
         }
 
-        // print the constructed distance array
         printSolution(dist);
     }
 
-    // Driver
     public void init() {
-        //example graph
         int[][] graph = new int[][] { { 0, 4, 0, 0, 0, 0, 0, 8, 0 },
                 { 4, 0, 8, 0, 0, 0, 0, 11, 0 },
                 { 0, 8, 0, 7, 0, 4, 0, 0, 2 },
