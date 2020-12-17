@@ -48,7 +48,7 @@ public class Main {
 
                 int ch = sc.nextInt();
 
-                if (ch <= 4)
+                if (ch <= 5)
                     arr = arrayCreator.init();
 
                 switch (ch) {
@@ -100,7 +100,7 @@ public class Main {
                     default: System.out.println("Enter a number from 1 to 15 only!");
                     continue;
                 }
-                if (ch <= 5) {
+                if (ch <= 4) {
                     printArray.printArray(arr);
                 }
                 break;
